@@ -1,0 +1,22 @@
+<%= form_with(model: fare, local: true) do |form| %>
+  <% if fare.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fare.errors.count, "error") %> prohibited this fare from being saved:</h2>
+
+      <ul>
+      <% fare.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.text_field :cost %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
