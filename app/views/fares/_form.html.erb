@@ -15,6 +15,10 @@
     <%= form.label :cost %>
     <%= form.text_field :cost %>
   </div>
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.file_field :images, multiple: true %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
