@@ -1,0 +1,315 @@
+
+/* NEW DASH STYLES */
+/* =============== */
+
+html {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom, #ffffff, rgba(245, 245, 245, 0.25));
+}
+body {
+  font-family: 'Lato', sans-serif!important;
+  font-weight: normal!important;
+  background-color: transparent!important;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+}
+#header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+#header .dropdown-toggle {
+  border: none;
+}
+#header #logo-menu {
+  padding-bottom: 20px;
+}
+.alert {
+  margin-bottom: 0px!important;
+  padding-bottom: 6px!important;
+  padding-top: 6px!important;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #filter-options #slider-filter-div {
+    display: none;
+  }
+}
+#app_view_container {
+  padding-bottom: 60px;
+}
+#app_view_container > .container {
+  margin-top: 20px;
+}
+#app_view_container tr th {
+  vertical-align: middle;
+}
+#app_view_container .glyphicon-sort {
+  top: 3px;
+}
+#test {
+  display: inline-block;
+  background-color: #50eb00;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  margin-right: 3px;
+}
+#status {
+  background-color: #50eb00;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.user {
+  width: 28px;
+  height: 28px;
+}
+.map {
+  width: 24.18px;
+  height: 19px;
+}
+.list {
+  width: 26px;
+  height: 19px;
+}
+.search {
+  width: 18px;
+  height: 18px;
+}
+.footer {
+  border-top: 1px solid #f0f0f0;
+  text-align: center;
+  color: #999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #fff;
+}
+.footer #devices-list_info {
+  padding-top: 0px;
+}
+.footer #movus-logo-wrapper {
+  text-align: left;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .footer #movus-logo-wrapper {
+    text-align: center;
+  }
+}
+.footer #movus-logo {
+  margin-left: 7px;
+}
+.footer #movus-logo img {
+  margin-top: -3px;
+}
+.footer .container-footer {
+  display: table;
+  height: 40px;
+}
+.footer .container-footer .row {
+  display: table-cell;
+  vertical-align: middle;
+}
+.footer .container-footer .row div {
+  margin-left: auto;
+  margin-right: auto;
+}
+#movus-logo-wrapper {
+  text-align: right;
+}
+
+/* DEVICES LIST STYLES */
+/* =================== */
+
+#devices-list {
+  border-bottom: none;
+}
+#devices-list thead tr th {
+  border-bottom: none;
+}
+#devices-list_filter {
+  text-align: right!important;
+}
+#devices-list_filter label {
+  margin-bottom: 0px;
+}
+#devices-list_filter .form-horizontal {
+  margin-top: 4px;
+}
+.overall_status_indicator, .rms_status_indicator, .tmp_status_indicator{
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.8);
+}
+.battery_component_small {
+  display: inline-block;
+  display: none;
+}
+.battery_component_large {
+  display: inline-block;
+}
+@media (max-width: 400px) {
+  #deviceListDataTableFilterClearButton {
+    display: none;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #devices-list_filter-slider {
+    display: none;
+  }
+}
+#devices-list_filter-slider {
+  float: left;
+}
+#filter-on-list-page, #filter-on-location-page {
+  margin-top: 4px;
+}
+
+.ui-slider-horizontal.ui-slider-pips {
+  margin-bottom: 0px !important;
+}
+#reset-device-filter-on-list {
+  float: left;
+  margin-left: 4px;
+}
+#toggleNotes {
+  margin-left: 3px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .battery_component_large {
+    display: none;
+  }
+  .battery_component_small {
+    display: inline-block;
+  }
+}
+/* Yes, the style below is a horrible hack, I'm sorry */
+.dont_display {
+  display: none!important;
+}
+
+/* DEVICE INFO SHOW STYLES */
+/* ======================= */
+#fan {
+  text-align: center;
+}
+#device_details_image {
+  width: 223px;
+  height: 223px;
+  object-fit: cover;
+  position: absolute;
+  margin-top: 0px;
+  z-index: 1;
+}
+@media (max-width: 350px) {
+  #device_details_image {
+    width: 160px;
+    height: 160px;
+  }
+  #show_info_sidebar {
+    margin-top: -15px;
+  }
+}
+@media (min-width: 768px) {
+  #device_details_image {
+    width: 220px;
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  #device_details_image {
+    width: 212.5px;
+    height: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  #device_details_image {
+    width: 262.5px;
+    height: 262.5px;
+  }
+  #show_info_sidebar {
+    margin-top: 10px;
+  }
+}
+#device_details_header {
+  margin: 0px!important;
+  background-color: #ccc;
+  background-image: image-url("device_details_pattern.png");
+  background-repeat: repeat;
+  min-height: 200px;
+  padding-top: 20px;
+}
+#device_details_name {
+  position: absolute;
+  padding-top: 135px;
+  padding-left: 280px;
+}
+#device_details_condition_bars {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+#show_info_container #links {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* MAP VIEW STYLES */
+/* =============== */
+
+.content {
+  background-color: #fff;
+}
+#map-white-gradient-background {
+  position: absolute;
+  top: 126px;
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(to bottom, #ffffff, transparent);
+  z-index: 1;
+}
+#map-filter-options {
+  margin-top: -52px;
+}
+#map-filter-options #slider-filter-div {
+  text-align: center;
+}
+.leaflet-control-mapbox-geocoder.leaflet-bar.leaflet-control {
+  display: none!important;
+}
+#map {
+  position: absolute;
+  top: 126px;
+  bottom: 40px;
+  width: 100%;
+  z-index: 0;
+}
+.leaflet-top {
+  padding-top: 70px;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #map-filter-options #slider-filter-div {
+    display: none;
+  }
+}
+
+#organisation-list-data-table_wrapper .row,
+#users-list_wrapper .row,
+#devices-list-data-table_wrapper .row,
+#devices-status-data-table_wrapper .row {
+  display: block;
+  clear: both;
+}
+#organisation-list-data-table_wrapper .row:first-of-type,
+#users-list_wrapper .row:first-of-type,
+#devices-list-data-table_wrapper .row:first-of-type,
+#devices-status-data-table_wrapper .row:first-of-type {
+  padding-top: 10px;
+}

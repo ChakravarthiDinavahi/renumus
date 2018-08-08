@@ -1,0 +1,22 @@
+// Existing styles
+// ===============
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap.min";
+@import "bootstrap";
+@import "dataTables.bootstrap.min";
+@import 'bootstrap-datetimepicker';
+@import "jquery-ui";
+@import "jquery-ui-slider-pips";
+@import "layout_custom";
+@import "mapbox";
+@import "devices_custom";
+@import "blueimp-gallery.min";
+@import "bootstrap-image-gallery.min";
+@import "summernote";
+// New dash styles
+// ===============
+@import "dash";
+@import "coloured-slider";
+@import "rowReorder.dataTables.min";
+@import "responsive.dataTables.min";
