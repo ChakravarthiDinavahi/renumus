@@ -24,8 +24,6 @@ class FaresController < ApplicationController
   # POST /fares
   # POST /fares.json
   def create
-
-    binding.pry
     @fare = Fare.new(fare_params)
     respond_to do |format|
       if @fare.save
@@ -70,7 +68,6 @@ class FaresController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fare_params
-      binding.pry
       params.require(:fare).permit(:cost,images: [])
     end
 end
